@@ -10,8 +10,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question1.mp3" type="audio/mpeg" />
-            <source src="/audio/question1.wav" type="audio/wav" />
+            <source src="/2.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -24,8 +23,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question2.mp3" type="audio/mpeg" />
-            <source src="/audio/question2.wav" type="audio/wav" />
+            <source src="/3.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -38,8 +36,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question3.mp3" type="audio/mpeg" />
-            <source src="/audio/question3.wav" type="audio/wav" />
+            <source src="/4.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -52,8 +49,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question4.mp3" type="audio/mpeg" />
-            <source src="/audio/question4.wav" type="audio/wav" />
+            <source src="/5.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -66,8 +62,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question5.mp3" type="audio/mpeg" />
-            <source src="/audio/question5.wav" type="audio/wav" />
+            <source src="/6.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -80,8 +75,7 @@ const InterviewContent: React.FC = () => {
         
         <div className="media-player">
           <audio controls>
-            <source src="/audio/question6.mp3" type="audio/mpeg" />
-            <source src="/audio/question6.wav" type="audio/wav" />
+            <source src="/7.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>

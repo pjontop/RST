@@ -11,10 +11,21 @@ const ResumeContent: React.FC = () => {
         <h2>Professional Documents</h2>
         <p style={{ fontSize: '18px', color: '#000000' }}>Download my comprehensive resume and cover letter.</p>
         
-        <div style={{ marginTop: '30px' }}>
-          <a href="#" className="btn" style={{ fontSize: '18px', padding: '12px 24px' }}>
-            <Download size={20} style={{ marginRight: '12px' }} />
-            Download Resume & Cover Letter (PDF)
+        <div className="download-links" style={{ marginTop: '30px' }}>
+          <a href="/Resume.pdf" download="Pramsu_Pandey_Resume.pdf" className="download-btn resume-btn">
+            <span className="download-icon">📄</span>
+            <div className="download-content">
+              <strong>Download Resume</strong>
+              <span>Complete professional background and experience</span>
+            </div>
+          </a>
+          
+          <a href="/CoverLetter.pdf" download="Pramsu_Pandey_Cover_Letter.pdf" className="download-btn cover-letter-btn">
+            <span className="download-icon">✉️</span>
+            <div className="download-content">
+              <strong>Download Cover Letter</strong>
+              <span>Personalized introduction and career objectives</span>
+            </div>
           </a>
         </div>
       </div>
@@ -43,12 +54,20 @@ const ResumeContent: React.FC = () => {
         
         <div className="skill-card">
           <h3>🏆 Key Achievements</h3>
-          <ul>
-            <li><strong>Nokia Hackathon Winner</strong> (2024)</li>
-            <li><strong>Stanford Qualia Global Scholars</strong> - Research Excellence Award</li>
-            <li><strong>Beaver Computing Contest</strong> - Top 25% Nationally</li>
-            <li><strong>Daydream Ottawa</strong> - Founding Organizer</li>
-          </ul>
+          <div className="achievement-with-photo">
+            <div className="achievement-text">
+              <ul>
+                <li><strong>Nokia Hackathon Winner</strong> (2024)</li>
+                <li><strong>Stanford Qualia Global Scholars</strong> - Research Excellence Award</li>
+                <li><strong>Beaver Computing Contest</strong> - Top 25% Nationally</li>
+                <li><strong>Daydream Ottawa</strong> - Founding Organizer</li>
+              </ul>
+            </div>
+            <div className="achievement-photo">
+              <img src="/NokiaHackathon.jpeg" alt="Nokia Hackathon Winner - Pramsu Pandey" className="hackathon-photo" />
+              <p className="photo-caption">🏆 Nokia Hackathon Winner 2024</p>
+            </div>
+          </div>
         </div>
         
         <div className="skill-card">

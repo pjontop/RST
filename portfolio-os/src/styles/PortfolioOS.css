@@ -2637,3 +2637,200 @@ html, body {
   margin: 0;
   text-align: justify;
 }
+
+/* Download Section Styles */
+.download-section {
+  margin: 50px 0;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  text-align: center;
+  animation: scaleIn 0.6s ease-out 0.2s both;
+}
+
+.download-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.download-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+.download-btn:hover::before {
+  left: 100%;
+}
+
+.download-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.download-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.download-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: 1;
+}
+
+.download-content strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.download-content span {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.resume-btn {
+  border-left: 6px solid #4A90E2;
+}
+
+.cover-letter-btn {
+  border-left: 6px solid #50C878;
+}
+
+.resume-btn:hover {
+  border-left-color: #357ABD;
+}
+
+.cover-letter-btn:hover {
+  border-left-color: #45B26B;
+}
+
+/* Responsive design for download section */
+@media (max-width: 768px) {
+  .download-links {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .download-btn {
+    padding: 16px 20px;
+  }
+  
+  .download-icon {
+    font-size: 28px;
+  }
+  
+  .download-content strong {
+    font-size: 16px;
+  }
+  
+  .download-content span {
+    font-size: 13px;
+  }
+}
+
+/* Achievement with Photo Styles */
+.achievement-with-photo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.achievement-text {
+  flex: 1;
+}
+
+.achievement-photo {
+  flex-shrink: 0;
+  text-align: center;
+  max-width: 200px;
+}
+
+.hackathon-photo {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.hackathon-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.photo-caption {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Responsive design for achievement photo */
+@media (max-width: 768px) {
+  .achievement-with-photo {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .achievement-photo {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  
+  .hackathon-photo {
+    max-width: 150px;
+  }
+}
