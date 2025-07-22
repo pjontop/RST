@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramsu Pandey - Portfolio OS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="apple-logo">
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="menu-item active">Portfolio OS</div>
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Window</div>
+            <div class="menu-item">Help</div>
+        </div>
+        <div class="menu-right">
+            <div class="menu-icon"><i class="fas fa-wifi"></i></div>
+            <div class="menu-icon"><i class="fas fa-battery-three-quarters"></i></div>
+            <div class="time-display" id="currentTime"></div>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="desktop" id="desktop">
+        <!-- Background -->
+        <div class="desktop-background"></div>
+        
+        <!-- Windows will be rendered here -->
+        <div class="windows-container" id="windowsContainer"></div>
+        
+        <!-- Welcome Message -->
+        <div class="welcome-message" id="welcomeMessage">
+            <div class="welcome-content">
+                <h1>Welcome to Pramsu's Portfolio OS</h1>
+                <p>Grade 9 Visionary • AI/ML Developer • Hackathon Organizer</p>
+                <p>Click on any app in the dock below to explore my portfolio</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dock -->
+    <div class="dock">
+        <div class="dock-item" data-app="home">
+            <div class="dock-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="dock-tooltip">Home</div>
+        </div>
+        <div class="dock-item" data-app="about">
+            <div class="dock-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="dock-tooltip">About Me</div>
+        </div>
+        <div class="dock-item" data-app="resume">
+            <div class="dock-icon">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="dock-tooltip">Resume</div>
+        </div>
+        <div class="dock-item" data-app="credentials">
+            <div class="dock-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="dock-tooltip">Credentials</div>
+        </div>
+        <div class="dock-item" data-app="experience">
+            <div class="dock-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="dock-tooltip">Experience</div>
+        </div>
+        <div class="dock-item" data-app="interview">
+            <div class="dock-icon">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="dock-tooltip">Interview</div>
+        </div>
+        <div class="dock-item" data-app="contact">
+            <div class="dock-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="dock-tooltip">Contact</div>
+        </div>
+        <div class="dock-divider"></div>
+        <div class="dock-item" data-app="trash">
+            <div class="dock-icon">
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="dock-tooltip">Trash</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
