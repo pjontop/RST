@@ -54,20 +54,12 @@ const ResumeContent: React.FC = () => {
         
         <div className="skill-card">
           <h3>🏆 Key Achievements</h3>
-          <div className="achievement-with-photo">
-            <div className="achievement-text">
-              <ul>
-                <li><strong>Nokia Hackathon Winner</strong> (2024)</li>
-                <li><strong>Stanford Qualia Global Scholars</strong> - Research Excellence Award</li>
-                <li><strong>Beaver Computing Contest</strong> - Top 25% Nationally</li>
-                <li><strong>Daydream Ottawa</strong> - Founding Organizer</li>
-              </ul>
-            </div>
-            <div className="achievement-photo">
-              <img src="/NokiaHackathon.jpeg" alt="Nokia Hackathon Winner - Pramsu Pandey" className="hackathon-photo" />
-              <p className="photo-caption">🏆 Nokia Hackathon Winner 2024</p>
-            </div>
-          </div>
+          <ul>
+            <li><strong>Nokia Hackathon Winner</strong> (2024)</li>
+            <li><strong>Stanford Qualia Global Scholars</strong> - Research Excellence Award</li>
+            <li><strong>Beaver Computing Contest</strong> - Top 25% Nationally</li>
+            <li><strong>Daydream Ottawa</strong> - Founding Organizer</li>
+          </ul>
         </div>
         
         <div className="skill-card">

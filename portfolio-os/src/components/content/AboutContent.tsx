@@ -149,6 +149,13 @@ const AboutContent: React.FC = () => {
                 <div className="initiative-item">
                   <div className="initiative-marker">🏆</div>
                   <div className="initiative-content">
+                    <strong>Nokia Hackathon Winner</strong>
+                    <span>First place victory at prestigious Nokia innovation competition</span>
+                  </div>
+                </div>
+                <div className="initiative-item">
+                  <div className="initiative-marker">🏆</div>
+                  <div className="initiative-content">
                     <strong>Daydream Ottawa</strong>
                     <span>Founding organizer of Canada's capital's largest youth hackathon</span>
                   </div>

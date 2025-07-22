@@ -9,11 +9,18 @@ const CredentialsContent: React.FC = () => {
       <h2>Major Achievements</h2>
       
       <div className="achievement-card">
-        <h4>🥇 Nokia Hackathon Winner (2024)</h4>
-        <p><strong>Achievement:</strong> First place winner in competitive hackathon environment</p>
-        <p><strong>Recognition:</strong> Recognized for exceptional technical innovation and problem-solving</p>
-        <p><strong>Impact:</strong> Demonstrated ability to deliver innovative solutions under pressure while competing against experienced developers</p>
-        <p><strong>Skills Demonstrated:</strong> Rapid prototyping, team leadership, technical presentation, innovative problem-solving</p>
+        <div className="achievement-with-photo">
+          <div className="achievement-text">
+            <h4>🥇 Nokia Hackathon Winner (2024)</h4>
+            <p><strong>Achievement:</strong> First place winner in competitive hackathon environment</p>
+            <p><strong>Recognition:</strong> Recognized for exceptional technical innovation and problem-solving</p>
+            <p><strong>Impact:</strong> Demonstrated ability to deliver innovative solutions under pressure while competing against experienced developers</p>
+            <p><strong>Skills Demonstrated:</strong> Rapid prototyping, team leadership, technical presentation, innovative problem-solving</p>
+          </div>
+          <div className="achievement-photo">
+            <img src="/NokiaHackathon.jpeg" alt="Nokia Hackathon Victory" className="hackathon-photo" />
+          </div>
+        </div>
       </div>
       
       <div className="achievement-card">
